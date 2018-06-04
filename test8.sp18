@@ -1,0 +1,14 @@
+program
+var x = 0 .
+start
+  var y = 0 .
+  start
+    var z = 0 .
+    read x .
+    read z .
+  stop
+  read y .
+  print y .
+  print z .
+  print x .
+stop

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]
+then
+  echo "ERROR"
+echo "Usage: ./newProject submission"
+echo "  where submission is either a file or a directory containing the submission"
+  exit
+fi
+
+if [ ! -e $1 ]
+then
+  echo "$1 does not exist in the current location"
+  exit
+fi
+
+FOLDER=cs4280
+PROJ_NUM=P4
+SUBMISSION=$1
+
+/accounts/classes/janikowc/submitProject/submit $FOLDER $PROJ_NUM /accounts/classes/janikowc/submitProject janikowc $SUBMISSION

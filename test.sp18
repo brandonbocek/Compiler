@@ -1,0 +1,6 @@
+program
+var x = 100 .
+start
+  read x .
+  print x .
+stop

@@ -1,0 +1,6 @@
+program
+var x = 2 .
+start
+  iff ( x > 1 )
+    print x .
+stop
